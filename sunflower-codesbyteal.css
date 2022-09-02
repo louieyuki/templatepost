@@ -1,0 +1,243 @@
+/*=============================================== *
+ * sunflower templates by codesbyteal
+ *=============================================== */
+
+/* general styling */
+
+.sunflower{--r1: 209, 160, 160; /* accent colour */
+     --dark:#1b1b1b; --light: #f0f0f0;  --bodyfont: source sans pro; color:var(--body); font:400 12px var(--bodyfont); text-align:justify; line-height:150%;}
+
+.sunflower-main b{color:rgba(var(--r1),1);}
+
+/* styling for light and dark sets */
+
+.sunflower.light{--body:var(--dark); --l0:#fff; --b1: #d9d9d9; --c1: rgba(var(--r1),0.3)}
+.sunflower.dark{--body:var(--light); --l0:var(--dark); --b1: #898989; --c1: rgba(var(--r1),0.7)}
+
+
+/* admin update */
+
+sunflower-admin{display:block; margin:20px auto; width:480px; outline:3px solid var(--l0); min-height:200px; background:var(--l0); border:1px solid var(--b1); box-sizing:border-box; padding:45px;}
+sunflower-admin top{width:100%; padding:40px 40px; display:flex; border:1px solid var(--b1); align-items:center; justify-content:center; font:400 23px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; box-sizing:border-box; position:relative; overflow:hidden;}
+sunflower-admin top x{display:inline-block; border-bottom:5px solid var(--c1); padding-bottom:5px; position:relative; z-index:2;}
+sunflower-admin top i{position:absolute; z-index:0; width:100%; height:119px; display:flex; font-size:230px; color:var(--b1); opacity:0.3; align-items:center; justify-content:center; top:0; left:0;}
+sunflower-admin .main{width:100%; display:block; box-sizing:border-box; border:1px solid var(--b1); border-top:none; padding:30px 45px;}
+sunflower-admin h1{display:flex; width:100%; font:400 16px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; box-sizing:border-box; align-items:center; padding-bottom:5px;}
+sunflower-admin h1:after{content:""; margin-left:10px; display:block; flex-grow:1; background:var(--c1); height:5px;}
+sunflower-admin h2{font:600 10px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; display:block; text-align:right; margin-top:0px;} 
+
+/* face claim */
+
+sunflower-admin faceclaim{width:100%; display:flex; box-sizing:border-box; border:1px solid var(--b1); border-top:none;}
+sunflower-admin facecol{width:50%; box-sizing:border-box; height:360px; display:block;}
+sunflower-admin facecol:first-of-type{border-right:1px solid var(--b1);} 
+sunflower-admin facecol x{width:100%; height:60px; display:flex; align-items:center; justify-content:center; font: 400 16px var(--bodyfont); box-sizing:border-box; text-transform:uppercase; letter-spacing:1px; border-bottom:1px solid var(--b1);} 
+sunflower-admin facecol scroll{width:100%; height:calc(100% - 60px); border:20px solid transparent; padding-right:5px; overflow:auto; display:block; box-sizing:border-box;}
+sunflower-admin facecol a{font:11px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; display:flex; width:100%; box-sizing:border-box; text-align:center; color:var(--body)!important; position:relative; height:24px; align-items:center; justify-content:center; overflow:hidden;}
+sunflower-admin facecol a charname{position:absolute; z-index:1; width:100%; height:100%; display:flex; align-items:center; justify-content:center; top:0; left:0; text-align:center; transition:0.3s; opacity:0; transform:rotatex(90deg); font-style:italic;}
+sunflower-admin facecol a:hover charname{transform:rotatex(0deg); opacity:1;}
+sunflower-admin facecol a:hover fc{opacity:0;}
+sunflower-admin facecol a fc{transition:0.3s; opacity:1;}
+sunflower-admin .reservebox{display:block; padding:20px; border:1px solid var(--b1); border-top:none;}
+sunflower-admin .reservebox:first-of-type{border-top:1px solid var(--b1); margin-top:25px;}
+sunflower-admin reserve{display:block; margin:2px 0;}
+sunflower-admin reserve b{text-transform:uppercase; letter-spacing:1px;}
+sunflower-admin reserve i{color:var(--body); opacity:0.7; margin-right:5px; font-size:80%;}
+
+/* member directory */
+
+sunflower-memdir{display:block; margin:20px auto; width:420px; outline:3px solid var(--l0); min-height:200px; background:var(--l0); border:1px solid var(--b1); box-sizing:border-box; padding:45px;}
+sunflower-memdir top{position:relative; width:100%;border:1px solid var(--b1); display:flex; flex-direction:column; align-items:center; padding:20px 30px 30px 30px; box-sizing:border-box;}
+sunflower-memdir top name{display:inline-flex; background:var(--l0); padding:0px 15px; font:400 21px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; position:absolute; height:40px; align-items:center; top:-20px;}
+sunflower-memdir top subt{font:10px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; text-align:center; display:block; padding-bottom:20px; display:block; }
+sunflower-memdir top subt i{font-size:80%; opacity:0.7; margin:0px 5px;}
+sunflower-memdir top desc{display:block;}
+sunflower-memdir char{width:100%; border:1px solid var(--b1); border-top:none; display:flex; box-sizing:border-box; padding:30px; align-items:center;}
+sunflower-memdir char img{border-radius:7px; width:60px; height:60px; position:relative; z-index:1;}
+sunflower-memdir char pic{border-radius:7px; width:60px; height:60px; position:relative; display:block; margin:-4px 0 0 -4px; margin-right:30px;}
+sunflower-memdir char pic:after{content:""; display:block; width:100%; height:100%; border-radius:7px; background:var(--c1); position:absolute; top:4px; left:4px; z-index:0; transition:0.2s;}
+sunflower-memdir char pic:hover:after{background:var(--b1); opacity:0.5;}
+sunflower-memdir char info{flex-grow:1; display:flex; flex-direction:column; justify-content:center; text-align:left;}
+sunflower-memdir char info name{font:400 18px var(--bodyfont); text-transform:uppercase; letter-spacing:1px;}
+sunflower-memdir char info subt{font:400 9px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; margin-top:5px;}
+sunflower-memdir char info subt i{font-size:80%; opacity:0.7; margin:0px 2px;}
+
+/* shipper app */
+
+sunflower-shipper{display:block; margin:20px auto; width:500px; outline:3px solid var(--l0); min-height:200px; background:var(--l0); border:1px solid var(--b1); box-sizing:border-box; padding:45px;}
+
+sunflower-shipper btm{width:100%; padding:40px 40px; display:flex; flex-direction:column; border:1px solid var(--b1); align-items:center; justify-content:center; font:400 23px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; box-sizing:border-box; position:relative; overflow:hidden;}
+sunflower-shipper btm x{display:inline-block; padding-bottom:5px; position:relative; z-index:2;}
+sunflower-shipper btm subt{font:10px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; color:var(--body);}
+sunflower-memdir bottom subt b{font-weight:600;}
+sunflower-shipper btm i.bg{position:absolute; z-index:0; width:100%; height:119px; display:flex; font-size:230px; color:var(--b1); opacity:0.3; align-items:center; justify-content:center; top:0; left:0; transform:rotate(8deg);}
+
+sunflower-shipper .sunflower-tabs{width:100%; height:340px; position:relative; border:1px solid var(--b1); border-bottom:none; box-sizing:border-box;}
+sunflower-shipper tabcontainer{width:100px; padding:0px 30px; background:var(--l0); height:20px; position:absolute; top:-10px; left:calc(50% - 80px); display:block;}
+.sunflower-tab{float:left;} 
+.sunflower-tab label{display:block; width:10px; height:10px; margin:0px; position:relative; top:-5px; z-index:3; background:var(--c1); border-radius:50%; margin-left: 20px; cursor:pointer; transition:0.3s;}
+.sunflower-tabs input#sunflower-tab-1 ~ label{margin-left:153px;}
+.sunflower-tab input[type=radio]:checked ~ label{z-index:2; background:var(--b1);}
+.sunflower-tab input[type=radio]{display:none;}
+.sunflower-content{position: absolute; top:30px; left:30px; width:calc(100% - 60px); height:calc(100% - 60px); background:var(--l0); transition:0.3s; opacity:0;}
+.sunflower-tab input[type=radio]:checked ~ label ~ .sunflower-content {z-index: 1; opacity:1;}
+
+.sunflower-content mainpic{width:335px; height:270px; display:block; position:relative;}
+.sunflower-content mainpic img{width:100%; height:100%; border-radius:7px; position:relative; z-index:1;}
+.sunflower-content mainpic:after{content:""; display:block; width:100%; height:100%; border-radius:7px; background:var(--c1); position:absolute; top:9px; left:9px; z-index:0; transition:0.2s;}
+.sunflower-shipcontent{width:100%; height:100%; overflow:auto; padding-right:10px;}
+.sunflower-shipcontent h1{display:flex; width:100%; font:400 16px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; box-sizing:border-box; align-items:center; padding-bottom:5px;}
+.sunflower-shipcontent h1:after{content:""; margin-left:10px; display:block; flex-grow:1; background:var(--c1); height:5px;}
+.sunflower-shipcontent appfield{width:100%; display:flex; border:1px solid var(--b1); box-sizing:border-box; padding:20px; justify-content:space-between; align-items:flex-start;} 
+.sunflower-shipcontent appfield + appfield{border-top:none;}
+.sunflower-shipcontent appfield x{font:600 10px var(--bodyfont); opacity:0.5; text-transform:uppercase; letter-spacing:1px; width:50%; display:block;}
+.sunflower-shipcontent appfield y{max-width:50%; text-align:right; display:block; margin-top:-2px;}
+.sunflower-shipcontent appfield + h1{margin-top:27px;}
+.sunflower-shipcontent p + h1{margin-top:27px;}
+
+/* shipper reply */
+
+sunflower-shipreply{display:block; margin:20px auto; width:380px; outline:3px solid var(--l0); background:var(--l0); border:1px solid var(--b1); box-sizing:border-box; padding:45px;}
+sunflower-shipreply main{position:relative; width:100%;border:1px solid var(--b1); display:flex; flex-direction:column; align-items:center; padding:20px 30px 30px 30px; box-sizing:border-box;}
+sunflower-shipreply main name{display:inline-flex; background:var(--l0); padding:0px 15px; font:400 21px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; position:absolute; height:40px; align-items:center; top:-20px;}
+sunflower-shipreply main name c{opacity:0.5; margin-right:6px;}
+sunflower-shipreply main subt{font:10px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; text-align:center; display:block; padding-bottom:20px; display:block; }
+sunflower-shipreply main subt i{font-size:80%; opacity:0.7; margin:0px 5px;}
+sunflower-shipreply main subt a{color:var(--body)!important;}
+sunflower-shipreply main .mainpost{padding-right:5px; display:block;}
+
+/* dev - main styling */
+
+sunflower-dev{display:block; margin:20px auto; width:480px; outline:3px solid var(--l0); background:var(--l0); border:1px solid var(--b1); box-sizing:border-box; padding:45px;}
+sunflower-dev main{position:relative; width:100%;border:1px solid var(--b1); display:flex; flex-direction:column; align-items:center; padding:40px 30px 30px 30px; box-sizing:border-box;}
+sunflower-dev main desc{display:inline-flex; background:var(--l0); padding:0px 15px; font:400 10px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; position:absolute; height:40px; align-items:center; top:-20px;}
+
+/* dev - one across */
+
+sunflower-dev onepic{width:100%; display:flex; flex-direction:column; align-items:center;}
+sunflower-dev onepic img{width:100%; border-radius:7px; margin-bottom:10px;}
+sunflower-dev onepic img:last-of-type{margin-bottom:0;}
+sunflower-dev divider{width:100%; height:5px; display:block; background:var(--c1); margin:10px 0;}
+sunflower-dev divider:first-child{margin-top:0;}
+sunflower-dev divider:last-child{margin-bottom:0;}
+
+/* dev - two across */ 
+
+sunflower-dev twopic{width:100%; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start;}
+sunflower-dev twopic img{width:calc(50% - 5px); border-radius:7px; margin-bottom:10px;}
+sunflower-dev twopic divider:last-child{margin-bottom:10px; margin-top:0;}
+
+/* dev - three across */
+
+sunflower-dev threepic{width:100%; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start;}
+sunflower-dev threepic img{width:calc(33% - 4px); border-radius:7px; margin-bottom:10px;}
+sunflower-dev threepic divider:last-child{margin-bottom:10px; margin-top:0;}
+
+/* dev - quote */
+
+sunflower-dev devquote{width:100%; display:flex; flex-direction:column; align-items:center; text-align:center; box-sizing:border-box; padding:25px; position:relative; }
+sunflower-dev devquote qt{font-size:170px; position:absolute; left:20px; top:50px; color:var(--b1); opacity:0.5; z-index:0;}
+sunflower-dev devquote txt{position:relative; z-index:1; font:400 italic 17px var(--bodyfont); letter-spacing:0.5px; width:100%; display:block; text-align:center;}
+sunflower-dev devquote author{position:relative; z-index:1; font:9px var(--headerfont); letter-spacing:1px; text-transform:uppercase; margin-top:25px; display:inline-block; padding-bottom:4px; border-bottom:4px solid var(--c1);}
+
+/* dev - drabble */ 
+
+sunflower-dev .drabble{width:100%; display:block; box-sizing:border-box; padding:0px 20px; position:relative;}
+
+/* thread - a */
+
+sunflower-threada{display:block; margin:20px auto; width:400px; outline:3px solid var(--l0); background:var(--l0); border:1px solid var(--b1); box-sizing:border-box; padding:45px;}
+sunflower-threada main{position:relative; width:100%;border:1px solid var(--b1); display:flex; flex-direction:column; align-items:center; padding:30px 40px 30px 40px; box-sizing:border-box;}
+sunflower-threada main name{display:inline-flex; background:var(--l0); padding:0px 15px; font:400 15px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; position:absolute; height:40px; align-items:center; top:-20px; }
+sunflower-threada main name x{padding-bottom:4px; border-bottom:4px solid var(--c1);}
+sunflower-threada main name x a{color:var(--body)!important;}
+sunflower-threada .postcontent{width:100%; display:block;}
+
+/* thread - b */
+
+sunflower-threadb{display:block; margin:20px auto; width:400px; outline:3px solid var(--l0); background:var(--l0); border:1px solid var(--b1); box-sizing:border-box; padding:87px 45px 45px 45px;}
+sunflower-threadb main{position:relative; width:100%;border:1px solid var(--b1); display:flex; flex-direction:column; align-items:center; padding:62px 40px 40px 40px; box-sizing:border-box;}
+sunflower-threadb main img{border-radius:7px; width:80px; height:80px; position:relative; z-index:2;}
+sunflower-threadb main pic{border-radius:7px; width:84px; height:84px; display:block; position:absolute; top:-42px; left:calc(50% - 42px); background:var(--l0);}
+sunflower-threadb main pic:after{content:""; display:block; width:80px; height:80px; border-radius:7px; background:var(--c1); position:absolute; bottom:0px; right:0px; z-index:0; transition:0.2s;}
+sunflower-threadb main picbg{width:114px; height:84px; background:var(--l0); position:absolute; display:block; top:-42px; left:calc(50% - 57px);}
+sunflower-threadb main name{display:inline-flex; background:var(--l0); padding:0px 15px; font:400 13px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; position:absolute; height:40px; align-items:center; bottom:-20px; }
+sunflower-threadb main name a{color:var(--body)!important;}
+sunflower-threadb .postcontent{width:100%; display:block;}
+
+/* thread - c (image & imageless versions) */ 
+
+sunflower-threadc{display:block; margin:20px auto; width:400px; outline:3px solid var(--l0); background:var(--l0); border:1px solid var(--b1); box-sizing:border-box; padding:45px;}
+sunflower-threadc top{width:100%; display:block; border:1px solid var(--b1); border-bottom:none; box-sizing:border-box; padding:40px;}
+sunflower-threadc pic{width:100%; display:block; position:relative;}
+sunflower-threadc pic img{width:100%; border-radius:7px; position:relative; top:-2px; left:-2px; z-index:1;}
+sunflower-threadc pic:after{content:""; display:block; background:var(--c1); width:100%; height:100%; border-radius:7px; right:-2px; bottom:-2px; position:absolute; z-index:0;}
+sunflower-threadc main{position:relative; width:100%;border:1px solid var(--b1); display:flex; flex-direction:column; align-items:center; padding:30px 40px; box-sizing:border-box;}
+sunflower-threadc .postcontent{width:100%; display:block;}
+sunflower-threadc btm{width:100%; height:80px; display:flex; border:1px solid var(--b1); border-top:none; align-items:center; justify-content:center; box-sizing:border-box; font:12px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; position:relative; overflow:hidden;}
+sunflower-threadc btm a{color:var(--bodyfont)!important;}
+sunflower-threadc btm x{display:inline-block; padding-bottom:4px; border-bottom:5px solid var(--c1); position:relative; z-index:1;}
+sunflower-threadc btm i.bg{position:absolute; z-index:0; width:100%; height:119px; display:flex; font-size:130px; color:var(--b1); opacity:0.3; align-items:center; justify-content:center; top:0; left:0;}
+
+/* multi-char request */ 
+
+sunflower-multireq{display:block; margin:20px auto; width:500px; outline:3px solid var(--l0); background:var(--l0); border:1px solid var(--b1); box-sizing:border-box; padding:45px;}
+sunflower-multireq main{position:relative; width:100%;border:1px solid var(--b1); display:flex; flex-direction:column; align-items:center; padding:30px 30px 30px 30px; box-sizing:border-box;}
+sunflower-multireq main reqtitle{display:inline-flex; background:var(--l0); padding:0px 15px; font:400 21px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; position:absolute; height:40px; align-items:center; top:-20px; box-sizing:border-box;}
+sunflower-multireq .topinfo{width:100%; max-height:120px; padding-right:10px; overflow:auto;}
+
+sunflower-multireq char{width:100%; box-sizing:border-box; border:1px solid var(--b1); border-top:none; display:block; height:150px; display:flex;}
+sunflower-multireq char pic{width:150px; height:150px; box-sizing:border-box; padding:30px; position:relative;}
+sunflower-multireq char pic img{width:90px; height:90px; border-radius:7px; position:relative; top:-2px; left:-2px; z-index:1;}
+sunflower-multireq char pic:after{content:""; display:block; border-radius:7px; background:var(--c1); width:90px; height:90px; position:absolute; right:28px; bottom:28px; z-index:0;}
+sunflower-multireq char info{width:calc(100% - 150px); height:150px; border-left:1px solid var(--b1); padding:25px 30px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:space-between; align-items:center;}
+sunflower-multireq char info name{font:13px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; display:flex; align-items:center; height:15px; width:100%;}
+sunflower-multireq char info name:after{content:""; flex-grow:1; display:block; background:var(--c1); margin-left:10px; height:5px;}
+sunflower-multireq char info .scroll{width:100%; height:calc(100% - 25px); overflow:auto; padding-right:5px;}
+
+sunflower-multireq char:nth-of-type(even){flex-direction:row-reverse;}
+sunflower-multireq char:nth-of-type(even) info{border-left:none; border-right:1px solid var(--b1);}
+sunflower-multireq char:nth-of-type(even) info name:after{flex-grow:0; width:0px;}
+sunflower-multireq char:nth-of-type(even) info name:before{content:""; flex-grow:1; display:block; background:var(--c1); margin-right:10px; height:5px;}
+
+/* single request */ 
+
+sunflower-reqone{display:flex; flex-wrap:wrap; margin:20px auto; width:500px; outline:3px solid var(--l0); background:var(--l0); border:1px solid var(--b1); box-sizing:border-box; padding:45px;}
+sunflower-reqone top{display:flex; width:100%; height:80px; border:1px solid var(--b1); border-bottom:none; box-sizing:border-box; font:10px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; align-items:center; justify-content:center; padding:0px 20px; position:relative; overflow:hidden;}
+sunflower-reqone top x{display:inline-block; padding-bottom:4px; border-bottom:5px solid var(--c1);}
+sunflower-reqone top x i{color:var(--body); opacity:0.5; font-size:80%; margin:0px 4px; position:relative; z-index:1;}
+sunflower-reqone top i.bg{position:absolute; z-index:0; width:100%; height:119px; display:flex; font-size:130px; color:var(--b1); opacity:0.3; align-items:center; justify-content:center; top:0; left:0; transform:rotate(8deg); top:-20px;}
+sunflower-reqone left{display:block; width:200px; height:310px; box-sizing:border-box; padding:25px; border:1px solid var(--b1); position:relative;}
+sunflower-reqone left img{width:100%; height:100%; position:relative; top:-2px; left:-2px; border-radius:7px; z-index:1;}
+sunflower-reqone left:after{content:""; display:block; width:150px; height:260px; position:absolute; z-index:0; border-radius:7px; background:var(--c1); right:23px; bottom:23px;}
+sunflower-reqone right{display:block; width:calc(100% - 200px); height:310px; box-sizing:border-box; border:1px solid var(--b1); border-left:none; padding:25px;}
+sunflower-reqone right .main{width:100%; height:100%; padding-right:10px; overflow:auto;}
+sunflower-reqone h1{display:flex; width:100%; font:400 13px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; box-sizing:border-box; align-items:center; padding-bottom:5px;}
+sunflower-reqone h1:after{content:""; margin-left:10px; display:block; flex-grow:1; background:var(--c1); height:5px;}
+
+/* phone - general styling */
+
+sunflower-phone{display:block; margin:20px auto; width:310px; background:var(--l0); border:3px solid var(--l0); box-sizing:border-box; border-radius:17px;}
+sunflower-phone1{display:block; width:100%; height:540px; padding:60px 20px 20px 20px; border:1px solid var(--b1); box-sizing:border-box; border-radius:17px; position:relative;}
+sunflower-phone top{width:80px; height:5px; background:var(--b1); border-radius:2px; position:absolute; top:28px; left:calc(50% - 45px); display:block; opacity:0.5;}
+sunflower-phone top1{width:6px; height:6px; background:var(--b1); border-radius:50%; position:absolute; top:28px; left:calc(50% + 45px); display:block; opacity:0.5;}
+sunflower-phone main{width:100%; height:calc(100% - 50px); border:1px solid var(--b1); display:flex; flex-direction:column; box-sizing:border-box; border-radius:7px 7px 0 0; position:relative; align-items:center; padding:30px 20px 20px 20px;}
+sunflower-phone main name{position:absolute; height:20px; top:-10px; z-index:1; padding:0px 15px; font:13px var(--bodyfont); letter-spacing:1px; background:var(--l0); display:flex; align-items:center; text-transform:uppercase;}
+
+/* phone - texting */
+
+sunflower-phone main .texts{width:100%; height:100%; padding-right:10px; display:flex; flex-direction:column; align-items:flex-end; overflow:auto;}
+sunflower-phone main .texts p{background:rgba(var(--r1),1); max-width:80%; border-radius: 7px 7px 0 7px; padding:10px; margin:0px 0px 10px 0px; color:var(--dark);}
+sunflower-phone main .texts p img{border-radius:7px 7px 0 7px; width:100%;}
+sunflower-phone btm{width:100%; height:50px; border:1px solid var(--b1); border-top:none; display:flex; box-sizing:border-box; border-radius:0 0 7px 7px; justify-content:space-between; padding:0 20px; font:10px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; align-items:center; background:rgba(var(--r1),0.1);}
+sunflower-phone btm i, sunflower-phone btm x{opacity:0.5;}
+
+/* phone - calling */
+
+sunflower-phone main.phonecall{ height:calc(100% - 190px);  padding:40px 30px 30px 30px;}
+sunflower-phone main .call{width:100%; height:100%; display:block; overflow:auto; box-sizing:border-box; padding-right:5px;}
+sunflower-phone callbtm{width:100%; height:190px; border:1px solid var(--b1); border-top:none; display:flex; box-sizing:border-box; border-radius:0 0 7px 7px; justify-content:center; padding:20px; font:10px var(--bodyfont); text-transform:uppercase; letter-spacing:1px; align-items:center; flex-direction:column; background:rgba(var(--r1),0.1);}
+sunflower-phone callbtm pic{width:80px; height:80px; position:relative; display:block; margin-bottom:21px;}
+sunflower-phone callbtm pic img{width:80px; height:80px; border-radius:50%; position:relative; top:-2px; left:-2px; z-index:1;}
+sunflower-phone callbtm pic:after{content:""; display:block; background:var(--c1); opacity:0.6; width:80px; height:80px; position:absolute; z-index:0; bottom:-2px; right:-2px; border-radius:50%;}
+sunflower-phone callbtm x{opacity:0.5;}
